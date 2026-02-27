@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KORJAAMOKONE.FI – KM-MACHINEN VERKKOSIVUSTO</title>
+  <meta name="description" content="KM-Machine – Laadukkaat korjaamokoneet: pilarinostimet, saksinostimet, rengaskoneet ja keventimet. Kitee, Suomi.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topstripe"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-main">Korjaamokone.fi</span>
+        <span class="logo-sub">KM-Machinen verkkosivusto</span>
+      </a>
+      <nav class="site-nav" aria-label="Päävalikko">
+        <a href="keventimet.html">Keventimet</a>
+        <a href="pilarinostimet.html">Pilarinostimet</a>
+        <a href="rengaskoneet.html">Rengaskoneet</a>
+        <a href="saksinostimet.html">Saksinostimet</a>
+      </nav>
+      <div class="search-wrap">
+        <input type="search" id="search-input" placeholder="Hae tuotteita..." autocomplete="off">
+        <div id="search-results"></div>
+      </div>
+      <button class="nav-toggle" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobiilivalikko">
+    <button class="close-nav" aria-label="Sulje valikko">✕</button>
+    <a href="keventimet.html">Keventimet</a>
+    <a href="pilarinostimet.html">Pilarinostimet</a>
+    <a href="rengaskoneet.html">Rengaskoneet</a>
+    <a href="saksinostimet.html">Saksinostimet</a>
+  </nav>
+
+  <main id="tp_content">
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Etusivun hero-kuva">
+      <img src="images/homepage-hero.gif" alt="KM-Machine korjaamokoneet" style="width:100%;height:100%;object-fit:cover;">
+    </section>
+
+    <!-- Category cards -->
+    <section aria-label="Tuotekategoriat">
+      <div class="category-grid">
+
+        <a href="keventimet.html" class="category-card" style="text-decoration:none;color:inherit;">
+          <h2>Keventimet</h2>
+          <p>Korjaamokoneessa nyt myös saatavilla laadukkaat keventimet moniin eri tarpeisiin.</p>
+          <span class="card-link">Katso tuotteet</span>
+        </a>
+
+        <a href="pilarinostimet.html" class="category-card" style="text-decoration:none;color:inherit;">
+          <h2>Pilarinostimet</h2>
+          <p>Korjaamokoneen kaupasta löydät valikoiman laadukkaita Hauvrex autonostimia. Hauvrexin 4&nbsp;tn kaksipilarinostimet HTL-2140 sekä HTL-2340 ovat jo pitkään olleet erittäin suosittuja ja nyt niiden rinnalle ovat tulleet myös Hauvrex-tuotemerkin järeät 5&nbsp;tn ja 6&nbsp;tn nostavat kaksipilarinostimet.</p>
+          <span class="card-link">Katso tuotteet</span>
+        </a>
+
+        <a href="rengaskoneet.html" class="category-card" style="text-decoration:none;color:inherit;">
+          <h2>Rengaskoneet</h2>
+          <p>Mallistostamme löydätte rengaskoneet kaikkiin tarpeisiinne. CRL-810 ja CRL-6112 soveltuvat erinomaisesti peruskäyttöön. Raskaampaa kalustoa varten olemme valinneet tuotevalikoimaamme rengaskoneet CRL-568:n ja CRL-598:n. Tämän lisäksi valikoimassamme on tietysti myös erinomainen renkaiden tasapainotuskone CRL-966.</p>
+          <span class="card-link">Katso tuotteet</span>
+        </a>
+
+        <a href="saksinostimet.html" class="category-card" style="text-decoration:none;color:inherit;">
+          <h2>Saksinostimet</h2>
+          <p>Saksinostimet ovat kuuluneet Korjaamokoneen perusvalikoimaan jo pitkään. Valimoimasta löytyy tuotteet joka tarpeeseen. Esimerkiksi Hauvrexin siirrettävä saksinostin 6128 on laadukas mutta silti vielä varsin edullinen vaihtoehto peruskäyttöön.</p>
+          <span class="card-link">Katso tuotteet</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Thank you note -->
+    <div class="index-thanks">
+      <p><em>Kiitos, että olet asiakkaamme. Saat asiakaspalvelumme kiinni numerosta <strong>040&nbsp;563&nbsp;7605</strong>, mikäli sinulla on kysyttävää!</em></p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <strong>Korjaamokone.fi</strong>
+        <p>KM-Machinen virallinen verkkokauppa</p>
+      </div>
+      <div class="footer-col">
+        <strong>Osoite</strong>
+        <p>KM-Machine<br>Savikontie 41<br>82500 Kitee</p>
+      </div>
+      <div class="footer-col">
+        <strong>Verkkokauppa</strong>
+        <p>KM-Machine verkkokauppa<br>Kaikki hinnat alv 25,5%</p>
+      </div>
+      <div class="footer-col">
+        <strong>Yhteystiedot</strong>
+        <p>kmmachinefinland(ät)gmail.com<br>040&nbsp;563&nbsp;7605</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; KM-Machine — Korjaamokone.fi
+    </div>
+  </footer>
+
+  <script src="search.js"></script>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const closeBtn = document.querySelector('.close-nav');
+
+    toggle.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+      document.body.style.overflow = '';
+    });
+  </script>
+
+</body>
+</html>
