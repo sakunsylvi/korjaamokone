@@ -673,7 +673,7 @@ img { display: block; max-width: 100%; height: auto; }
 
 .diagram-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
   gap: 24px;
 }
 
