@@ -180,6 +180,21 @@
     "available": true
   },
   {
+    "title": "Kaksipilarinostin Hauvrex HTL-3450",
+    "category": "pilarinostimet",
+    "categoryLabel": "Pilarinostimet",
+    "slug": "pilarinostimet-kaksipilarinostin-htl-3450.html",
+    "image": "images/pilarinostimet-kaksipilarinostin-htl-3450-1.gif",
+    "specs": [
+      "Kapasiteetti 5 t",
+      "Symmetriset 3+3 nostovarret",
+      "Sähkölukot",
+      "Nostokorkeus max 1 945 mm"
+    ],
+    "price": null,
+    "available": true
+  },
+  {
     "title": "Raskaan kaluston rengaskone CRL-598",
     "category": "rengaskoneet",
     "categoryLabel": "Rengaskoneet",
@@ -404,6 +419,31 @@
       "CE-hyväksytty"
     ],
     "price": "2 990 € sis. alv",
+    "available": true
+  },
+  {
+    "title": "Saksinostin CRL-6270",
+    "category": "saksinostimet",
+    "categoryLabel": "Saksinostimet",
+    "slug": "saksinostimet-saksinostin-crl-6270.html",
+    "image": "images/saksinostimet-saksinostin-crl-6270-1.jpeg",
+    "specs": [
+      "Max nostokorkeus 2 000 mm",
+      "Tason pituus 1 540 mm"
+    ],
+    "price": null,
+    "available": true
+  },
+  {
+    "title": "Saksinostin CRL-6010",
+    "category": "saksinostimet",
+    "categoryLabel": "Saksinostimet",
+    "slug": "saksinostimet-saksinostin-crl-6010.html",
+    "image": "images/saksinostimet-saksinostin-crl-6010-1.gif",
+    "specs": [
+      "Matalaprofiilinen saksinostin"
+    ],
+    "price": null,
     "available": true
   },
   {
