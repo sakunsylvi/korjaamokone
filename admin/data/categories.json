@@ -1,0 +1,34 @@
+[
+    {
+        "id": "keventimet",
+        "label": "Keventimet",
+        "intro": "Korjaamokoneessa nyt myös saatavilla laadukkaat keventimet moniin eri tarpeisiin.",
+        "metaDescription": "Laadukkaat keventimet moniin eri tarpeisiin. Paineilmatunkit ja hydrauliset keventimet KM-Machinelta.",
+        "homepageDescription": "Korjaamokoneessa nyt myös saatavilla laadukkaat keventimet moniin eri tarpeisiin.",
+        "sortOrder": 0
+    },
+    {
+        "id": "pilarinostimet",
+        "label": "Pilarinostimet",
+        "intro": "Korjaamokoneen kaupasta löydät valikoiman laadukkaita Hauvrex autonostimia. Hauvrexin kaksipilarinostimet HTL-2340 sekä HTL-3340 ovat jo pitkään olleet erittäin suosittuja ammattikäyttöön tarkoitettuja sähkölukollisia nostimia. Niiden rinnalle on tulleet myös Hauvrexin järeämmät aina 6 tn nostotehoon yltävät kaksipilarinostimet.",
+        "metaDescription": "Hauvrex kaksipilarinostimet ja nelipilarinostimet. 4–6 tn nostavat ammattimallit KM-Machinelta.",
+        "homepageDescription": "Korjaamokoneen kaupasta löydät valikoiman laadukkaita Hauvrex autonostimia. Hauvrexin 4 tn kaksipilarinostimet HTL-2140 sekä HTL-2340 ovat jo pitkään olleet erittäin suosittuja ja nyt niiden rinnalle ovat tulleet myös Hauvrex-tuotemerkin järeät 5 tn ja 6 tn nostavat kaksipilarinostimet.",
+        "sortOrder": 1
+    },
+    {
+        "id": "rengaskoneet",
+        "label": "Rengaskoneet",
+        "intro": "Mallistostamme löydätte rengaskoneet kaikkiin tarpeisiinne. CRL-810 ja CRL-6112 soveltuvat erinomaisesti peruskäyttöön. Raskaampaa kalustoa varten olemme valinneet tuotevalikoimaamme rengaskoneet CRL-568:n ja CRL-598:n. Tämän lisäksi valikoimassamme on tietysti myös erinomainen renkaiden tasapainotuskone CRL-966.",
+        "metaDescription": "Rengaskoneet ja tasapainotuskoneet kaikkiin tarpeisiin. CRL-sarja ja raskaan kaluston rengaskoneet KM-Machinelta.",
+        "homepageDescription": "Mallistostamme löydätte rengaskoneet kaikkiin tarpeisiinne. CRL-810 ja CRL-6112 soveltuvat erinomaisesti peruskäyttöön. Raskaampaa kalustoa varten olemme valinneet tuotevalikoimaamme rengaskoneet CRL-568:n ja CRL-598:n. Tämän lisäksi valikoimassamme on tietysti myös erinomainen renkaiden tasapainotuskone CRL-966.",
+        "sortOrder": 2
+    },
+    {
+        "id": "saksinostimet",
+        "label": "Saksinostimet",
+        "intro": "Saksinostimet ovat kuuluneet Korjaamokoneen perusvalikoimaan jo pitkään. Valimoimasta löytyy tuotteet joka tarpeeseen. Esimerkiksi siirrettävä saksinostin Hauvrex 6128 on laadukas mutta silti vielä varsin edullinen vaihtoehto peruskäyttöön. Haettaessa lisää jämäkkyyttä ja toiminnallisuuksia vaihtoehtona on valita esimerkiksi CR-6106.",
+        "metaDescription": "Hauvrex ja CR saksinostimet — siirrettävät ja kiinteät mallit. Kapasiteetti 2,8–4 tn. KM-Machine, Kitee.",
+        "homepageDescription": "Saksinostimet ovat kuuluneet Korjaamokoneen perusvalikoimaan jo pitkään. Valimoimasta löytyy tuotteet joka tarpeeseen. Esimerkiksi Hauvrexin siirrettävä saksinostin 6128 on laadukas mutta silti vielä varsin edullinen vaihtoehto peruskäyttöön.",
+        "sortOrder": 3
+    }
+]
