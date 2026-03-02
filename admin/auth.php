@@ -17,7 +17,7 @@ function init_session(): void
     session_set_cookie_params([
         'lifetime' => SESSION_LIFETIME,
         'path'     => '/admin/',
-        'secure'   => true,
+        'secure'   => (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https'),
         'httponly'  => true,
         'samesite' => 'Strict',
     ]);
