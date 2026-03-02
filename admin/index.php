@@ -184,6 +184,10 @@ switch ($action) {
         header('Location: index.php');
         exit;
 
+    case 'guide':
+        require __DIR__ . '/views/guide.php';
+        break;
+
     case 'publish':
         require_once __DIR__ . '/markdown.php';
         require_once __DIR__ . '/templates.php';

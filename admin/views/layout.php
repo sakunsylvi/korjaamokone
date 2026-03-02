@@ -13,6 +13,7 @@
             <nav class="admin-nav">
                 <a href="index.php">Tuotteet</a>
                 <a href="index.php?action=publish">Julkaise</a>
+                <a href="index.php?action=guide">Käyttöohje</a>
                 <a href="index.php?action=logout">Kirjaudu ulos</a>
             </nav>
         </div>
