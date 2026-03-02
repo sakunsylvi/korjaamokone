@@ -3,6 +3,9 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/data.php';
 
+// Start session early so the cookie is sent before any HTML output
+init_session();
+
 $action = $_GET['action'] ?? 'dashboard';
 
 // Public routes (no auth required)
