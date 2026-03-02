@@ -8,14 +8,12 @@ $action = $_GET['action'] ?? 'dashboard';
 // Public routes (no auth required)
 if ($action === 'login') {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (!verify_csrf($_POST['csrf_token'] ?? '')) {
-            $error = 'CSRF-tarkistus epaonnistui';
-        } elseif (login($_POST['username'] ?? '', $_POST['password'] ?? '')) {
+        verify_csrf($_POST['csrf_token'] ?? '');
+        if (login($_POST['username'] ?? '', $_POST['password'] ?? '')) {
             header('Location: index.php');
             exit;
-        } else {
-            $error = 'Virheelliset tunnukset';
         }
+        $error = 'Virheelliset tunnukset';
     }
     require __DIR__ . '/views/login.php';
     exit;

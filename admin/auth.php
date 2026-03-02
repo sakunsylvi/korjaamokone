@@ -66,10 +66,14 @@ function csrf_token(): string
 
 /**
  * Validate a submitted CSRF token against the session token.
+ * Aborts with 403 on mismatch.
  */
-function verify_csrf(string $token): bool
+function verify_csrf(string $token): void
 {
-    return hash_equals(csrf_token(), $token);
+    if (!hash_equals(csrf_token(), $token)) {
+        http_response_code(403);
+        die('CSRF token mismatch');
+    }
 }
 
 /**
