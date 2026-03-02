@@ -6,7 +6,7 @@
 // Directory paths
 define('ADMIN_DIR', __DIR__);
 define('DATA_DIR', ADMIN_DIR . '/data');
-define('SITE_DIR', dirname(ADMIN_DIR));
+define('SITE_DIR', dirname(ADMIN_DIR) . '/2026');
 define('IMAGES_DIR', SITE_DIR . '/images');
 
 // Auth credentials - single user
