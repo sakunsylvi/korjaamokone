@@ -1,0 +1,48 @@
+# BEGIN 2026 static site
+RewriteEngine On
+
+# HTTP -> HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Legacy WP /tuotteet/ slugs -> new static pages
+RewriteRule ^tuotteet/rengaskoneet/?$ /2026/rengaskoneet.html [R=301,L]
+RewriteRule ^tuotteet/ajoneuvonostimet/?$ /2026/saksinostimet.html [R=301,L]
+RewriteRule ^tuotteet/saksinostimet/?$ /2026/saksinostimet.html [R=301,L]
+RewriteRule ^tuotteet/pilarinostimet/?$ /2026/pilarinostimet.html [R=301,L]
+RewriteRule ^tuotteet/keventimet/?$ /2026/keventimet.html [R=301,L]
+
+# Admin panel — bypass static site rewrite
+RewriteRule ^admin(/.*)?$ - [L]
+
+# Serve everything from 2026/
+RewriteCond %{REQUEST_URI} !^/2026/
+RewriteRule ^(.*)$ /2026/$1 [L]
+# END 2026 static site
+
+#RewriteOptions inherit
+#
+## BEGIN WordPress
+## Rivit, jotka ovat "BEGIN WordPress" ja "END WordPress" välissä on luotu dynaamisesti ja niitä tulee muokata vain WordPressin filttereillä. Kaikki manuaaliset muutokset riveihin tullaan yliajamaan.
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+#</IfModule>
+#
+## END WordPress
+#RewriteCond %{HTTP_HOST} ^.*$
+#RewriteRule ^tuotteet\/$ "https\:\/\/korjaamokoneet\.fi\/" [R=302,L]
+#RewriteCond %{HTTP_HOST} ^.*$
+#RewriteRule ^verkkokauppa\/$ "https\:\/\/korjaamokoneet\.fi\/" [R=302,L]
+#
+## php -- BEGIN cPanel-generated handler, do not edit
+## Set the "ea-php82" package as the default "PHP" programming language.
+#<IfModule mime_module>
+#  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+#</IfModule>
+## php -- END cPanel-generated handler, do not edit
