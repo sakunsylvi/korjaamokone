@@ -15,7 +15,7 @@ ob_start();
 <?php if ($success): ?>
     <div class="flash-success">Sivusto julkaistu onnistuneesti.</div>
 <?php else: ?>
-    <div class="flash-error">Julkaisussa tapahtui virheita.</div>
+    <div class="flash-error">Julkaisussa tapahtui virheitä.</div>
 <?php endif; ?>
 
 <div class="publish-results">

@@ -22,13 +22,13 @@ ob_start();
     <div class="card">
         <div class="form-group">
             <label class="form-label" for="intro">Esittelyteksti</label>
-            <span class="form-hint">Nakyy kategoriasivun ylaosassa</span>
+            <span class="form-hint">Näkyy kategoriasivun yläosassa</span>
             <textarea class="form-textarea" id="intro" name="intro" rows="5"><?= htmlspecialchars($intro) ?></textarea>
         </div>
 
         <div class="form-group">
             <label class="form-label" for="homepageDescription">Etusivun kuvaus</label>
-            <span class="form-hint">Nakyy etusivun kategoriakortissa</span>
+            <span class="form-hint">Näkyy etusivun kategoriakortissa</span>
             <textarea class="form-textarea" id="homepageDescription" name="homepageDescription" rows="4"><?= htmlspecialchars($homepageDescription) ?></textarea>
         </div>
 
@@ -39,7 +39,7 @@ ob_start();
         </div>
 
         <div class="form-group">
-            <label class="form-label" for="sortOrder">Jarjestys</label>
+            <label class="form-label" for="sortOrder">Järjestys</label>
             <input class="form-input" type="number" id="sortOrder" name="sortOrder" value="<?= htmlspecialchars((string)$sortOrder) ?>" style="width:120px;">
         </div>
     </div>

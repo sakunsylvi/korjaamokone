@@ -91,14 +91,14 @@ ob_start();
                 <input class="form-input" type="text" id="price" name="price" value="<?= htmlspecialchars($price) ?>" placeholder="esim. 2 790 &euro; sis. alv">
             </div>
             <div class="form-group">
-                <label class="form-label" for="originalPrice">Alkuperainen hinta</label>
+                <label class="form-label" for="originalPrice">Alkuperäinen hinta</label>
                 <input class="form-input" type="text" id="originalPrice" name="originalPrice" value="<?= htmlspecialchars($originalPrice) ?>" placeholder="valinnainen, yliviivattu hinta">
             </div>
         </div>
 
         <div class="form-group">
             <label class="form-label" for="priceNote">Hintahuomio</label>
-            <input class="form-input" type="text" id="priceNote" name="priceNote" value="<?= htmlspecialchars($priceNote) ?>" placeholder="esim. Hinta pyydettaessa">
+            <input class="form-input" type="text" id="priceNote" name="priceNote" value="<?= htmlspecialchars($priceNote) ?>" placeholder="esim. Hinta pyydettäessä">
         </div>
 
         <div class="form-group">
@@ -114,7 +114,7 @@ ob_start();
     <div class="card">
         <h2>Ominaisuudet listaukseen</h2>
         <div class="form-group">
-            <label class="form-label" for="specs">Yksi ominaisuus per rivi (nakyy kategoriasivulla)</label>
+            <label class="form-label" for="specs">Yksi ominaisuus per rivi (näkyy kategoriasivulla)</label>
             <textarea class="form-textarea" id="specs" name="specs" rows="6"><?= htmlspecialchars(implode("\n", $specs)) ?></textarea>
         </div>
     </div>
@@ -132,7 +132,7 @@ ob_start();
                 </div>
             <?php endforeach; ?>
         </div>
-        <button type="button" class="btn btn-small" onclick="addSpecRow()">Lisaa rivi</button>
+        <button type="button" class="btn btn-small" onclick="addSpecRow()">Lisää rivi</button>
     </div>
 
     <div class="card">
@@ -156,7 +156,7 @@ ob_start();
         </div>
 
         <div class="form-group">
-            <label class="form-label">Lisaa uusia kuvia</label>
+            <label class="form-label">Lisää uusia kuvia</label>
             <input class="form-input" type="file" name="newImages[]" multiple accept="image/*">
         </div>
     </div>
@@ -174,13 +174,13 @@ ob_start();
         </div>
 
         <div class="form-group">
-            <label class="form-label">Lisaa uusia mittakuvia</label>
+            <label class="form-label">Lisää uusia mittakuvia</label>
             <input class="form-input" type="file" name="newDiagrams[]" multiple accept="image/*">
         </div>
     </div>
 
     <div class="card">
-        <h2>SEO ja jarjestys</h2>
+        <h2>SEO ja järjestys</h2>
 
         <div class="form-group">
             <label class="form-label" for="metaDescription">Meta-kuvaus</label>
@@ -188,7 +188,7 @@ ob_start();
         </div>
 
         <div class="form-group">
-            <label class="form-label" for="sortOrder">Jarjestys</label>
+            <label class="form-label" for="sortOrder">Järjestys</label>
             <input class="form-input" type="number" id="sortOrder" name="sortOrder" value="<?= htmlspecialchars((string)$sortOrder) ?>" style="width:120px;">
         </div>
     </div>
@@ -250,7 +250,7 @@ function removeImage(btn, type) {
 
 // --- Delete confirmation ---
 function confirmDelete() {
-    if (confirm('Haluatko varmasti poistaa taman tuotteen? Tata toimintoa ei voi peruuttaa.')) {
+    if (confirm('Haluatko varmasti poistaa tämän tuotteen? Tätä toimintoa ei voi peruuttaa.')) {
         document.getElementById('delete-form').submit();
     }
 }

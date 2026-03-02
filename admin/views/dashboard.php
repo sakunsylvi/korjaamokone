@@ -101,7 +101,7 @@ unset($catProducts);
             <div class="form-group">
                 <label class="form-label" for="clone-select">Kloonaa olemassa olevasta (valinnainen)</label>
                 <select class="form-select" id="clone-select" name="clone">
-                    <option value="">-- Tyhjasta --</option>
+                    <option value="">-- Tyhjästä --</option>
                     <?php foreach ($grouped as $catId => $catProducts): ?>
                         <?php if (!empty($catProducts)): ?>
                             <optgroup label="<?= htmlspecialchars(CATEGORIES[$catId] ?? $catId) ?>">

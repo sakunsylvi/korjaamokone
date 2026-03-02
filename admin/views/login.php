@@ -18,7 +18,7 @@
             <input type="hidden" name="csrf_token" value="<?= htmlspecialchars(csrf_token()) ?>">
 
             <div class="form-group">
-                <label class="form-label" for="username">Kayttajanimi</label>
+                <label class="form-label" for="username">Käyttäjänimi</label>
                 <input class="form-input" type="text" id="username" name="username" autocomplete="username" required autofocus>
             </div>
 
