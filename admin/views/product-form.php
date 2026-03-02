@@ -19,7 +19,7 @@ $description  = $product['description'] ?? '';
 $metaDescription = $product['metaDescription'] ?? '';
 $sortOrder    = $product['sortOrder'] ?? 0;
 $images       = $product['images'] ?? [];
-$diagrams     = $product['diagrams'] ?? [];
+$diagrams     = $product['diagramImages'] ?? [];
 
 // When cloning, clear identity fields
 if ($isClone) {
@@ -40,8 +40,8 @@ ob_start();
 <form method="post" action="index.php?action=save-product" enctype="multipart/form-data">
     <input type="hidden" name="csrf_token" value="<?= htmlspecialchars(csrf_token()) ?>">
     <input type="hidden" name="id" value="<?= htmlspecialchars($id) ?>">
-    <input type="hidden" name="existing_images" id="existing-images" value="<?= htmlspecialchars(json_encode($images)) ?>">
-    <input type="hidden" name="existing_diagrams" id="existing-diagrams" value="<?= htmlspecialchars(json_encode($diagrams)) ?>">
+    <input type="hidden" name="existingImages" id="existing-images" value="<?= htmlspecialchars(json_encode($images)) ?>">
+    <input type="hidden" name="existingDiagramImages" id="existing-diagrams" value="<?= htmlspecialchars(json_encode($diagrams)) ?>">
 
     <div class="card">
         <h2>Perustiedot</h2>
@@ -126,8 +126,8 @@ ob_start();
         <div class="spec-rows" id="spec-rows">
             <?php foreach ($specTable as $i => $row): ?>
                 <div class="spec-row">
-                    <input class="form-input" type="text" name="spec_labels[]" value="<?= htmlspecialchars($row['label'] ?? '') ?>" placeholder="Ominaisuus">
-                    <input class="form-input" type="text" name="spec_values[]" value="<?= htmlspecialchars($row['value'] ?? '') ?>" placeholder="Arvo">
+                    <input class="form-input" type="text" name="specLabel[]" value="<?= htmlspecialchars($row['label'] ?? '') ?>" placeholder="Ominaisuus">
+                    <input class="form-input" type="text" name="specValue[]" value="<?= htmlspecialchars($row['value'] ?? '') ?>" placeholder="Arvo">
                     <button type="button" class="btn-remove" onclick="this.parentElement.remove()" title="Poista">X</button>
                 </div>
             <?php endforeach; ?>
@@ -157,7 +157,7 @@ ob_start();
 
         <div class="form-group">
             <label class="form-label">Lisaa uusia kuvia</label>
-            <input class="form-input" type="file" name="new_images[]" multiple accept="image/*">
+            <input class="form-input" type="file" name="newImages[]" multiple accept="image/*">
         </div>
     </div>
 
@@ -175,7 +175,7 @@ ob_start();
 
         <div class="form-group">
             <label class="form-label">Lisaa uusia mittakuvia</label>
-            <input class="form-input" type="file" name="new_diagrams[]" multiple accept="image/*">
+            <input class="form-input" type="file" name="newDiagrams[]" multiple accept="image/*">
         </div>
     </div>
 
@@ -228,8 +228,8 @@ function addSpecRow() {
     var row = document.createElement('div');
     row.className = 'spec-row';
     row.innerHTML =
-        '<input class="form-input" type="text" name="spec_labels[]" placeholder="Ominaisuus">' +
-        '<input class="form-input" type="text" name="spec_values[]" placeholder="Arvo">' +
+        '<input class="form-input" type="text" name="specLabel[]" placeholder="Ominaisuus">' +
+        '<input class="form-input" type="text" name="specValue[]" placeholder="Arvo">' +
         '<button type="button" class="btn-remove" onclick="this.parentElement.remove()" title="Poista">X</button>';
     container.appendChild(row);
 }

@@ -47,7 +47,7 @@ function is_logged_in(): bool
 function require_auth(): void
 {
     if (!is_logged_in()) {
-        header('Location: /admin/login.php');
+        header('Location: index.php?action=login');
         exit;
     }
 }

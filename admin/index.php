@@ -8,11 +8,14 @@ $action = $_GET['action'] ?? 'dashboard';
 // Public routes (no auth required)
 if ($action === 'login') {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (login($_POST['user'] ?? '', $_POST['pass'] ?? '', $_POST['csrf'] ?? '')) {
+        if (!verify_csrf($_POST['csrf_token'] ?? '')) {
+            $error = 'CSRF-tarkistus epaonnistui';
+        } elseif (login($_POST['username'] ?? '', $_POST['password'] ?? '')) {
             header('Location: index.php');
             exit;
+        } else {
+            $error = 'Virheelliset tunnukset';
         }
-        $error = 'Virheelliset tunnukset';
     }
     require __DIR__ . '/views/login.php';
     exit;
@@ -47,7 +50,15 @@ switch ($action) {
             $product['images'] = [];
             $product['diagramImages'] = [];
         } else {
-            $product = null;
+            // New product from scratch
+            $product = [
+                'id' => '', 'title' => '', 'category' => '', 'subcategory' => '',
+                'modelCode' => '', 'price' => null, 'originalPrice' => null,
+                'priceNote' => null, 'availability' => 'available',
+                'specs' => [], 'specTable' => [], 'description' => '',
+                'metaDescription' => '', 'sortOrder' => 0,
+                'images' => [], 'diagramImages' => [],
+            ];
         }
         $categories = load_categories();
         require __DIR__ . '/views/product-form.php';
@@ -55,7 +66,7 @@ switch ($action) {
 
     case 'save-product':
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: index.php'); exit; }
-        verify_csrf($_POST['csrf'] ?? '');
+        verify_csrf($_POST['csrf_token'] ?? '');
         require_once __DIR__ . '/upload.php';
 
         $product = [
@@ -143,7 +154,7 @@ switch ($action) {
 
     case 'delete-product':
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: index.php'); exit; }
-        verify_csrf($_POST['csrf'] ?? '');
+        verify_csrf($_POST['csrf_token'] ?? '');
         $id = $_POST['id'] ?? '';
         if ($id) {
             delete_product($id);
@@ -159,7 +170,7 @@ switch ($action) {
 
     case 'save-category':
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: index.php'); exit; }
-        verify_csrf($_POST['csrf'] ?? '');
+        verify_csrf($_POST['csrf_token'] ?? '');
         $category = [
             'id' => $_POST['id'] ?? '',
             'label' => CATEGORIES[$_POST['id'] ?? ''] ?? '',
@@ -183,7 +194,7 @@ switch ($action) {
 
     case 'remove-image':
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: index.php'); exit; }
-        verify_csrf($_POST['csrf'] ?? '');
+        verify_csrf($_POST['csrf_token'] ?? '');
         $productId = $_POST['productId'] ?? '';
         $filename = $_POST['filename'] ?? '';
         $imageType = $_POST['imageType'] ?? 'product';
