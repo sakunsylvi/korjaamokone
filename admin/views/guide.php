@@ -50,6 +50,17 @@ ob_start();
     <li><strong>Kirjaudu ulos</strong> &ndash; lopettaa istunnon</li>
 </ul>
 
+<h3>Sivuston ja hallintapaneelin välinen vaihtopalkki</h3>
+
+<p>Kun olet kirjautuneena, sivun yläosassa näkyy kapea tumma palkki jokaisella sivulla &ndash; sekä hallintapaneelissa että julkisella sivustolla (korjaamokoneet.fi). Palkki toimii pikavalikona näiden kahden välillä:</p>
+
+<ul>
+    <li><strong>Hallintapaneelissa</strong> palkissa lukee &quot;korjaamokoneet.fi&quot; ja sitä klikkaamalla pääsee suoraan julkiselle sivustolle.</li>
+    <li><strong>Julkisella sivustolla</strong> palkissa lukee &quot;Hallintapaneeli&quot; ja sitä klikkaamalla pääsee takaisin hallintapaneeliin.</li>
+</ul>
+
+<p>Palkki näkyy ainoastaan sinulle kirjautuneena käyttäjänä &ndash; tavalliset sivuston kävijät eivät näe sitä koskaan. Jos palkki ei näy julkisella sivustolla, kokeile kovaa päivitystä (Ctrl+Shift+R tai Cmd+Shift+R).</p>
+
 <hr>
 
 <h2 id="yleiskatsaus">2. Hallintapaneelin yleiskatsaus</h2>
