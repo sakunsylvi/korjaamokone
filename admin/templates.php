@@ -148,6 +148,7 @@ function generate_js(): string
       document.body.style.overflow = '';
     });
   </script>
+  <script src="admin-bar.js"></script>
 HTML;
 }
 

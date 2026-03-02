@@ -91,6 +91,16 @@ function login(string $user, string $pass): bool
         $_SESSION['last_activity'] = time();
         // Reset CSRF token on login
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+
+        // Set site-wide cookie so public pages can show admin toolbar via JS
+        setcookie('admin_logged_in', '1', [
+            'expires'  => time() + SESSION_LIFETIME,
+            'path'     => '/',
+            'secure'   => (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https'),
+            'httponly'  => false,  // JS needs to read this
+            'samesite' => 'Strict',
+        ]);
+
         return true;
     }
 
@@ -120,4 +130,10 @@ function logout(): void
 
         session_destroy();
     }
+
+    // Clear the site-wide admin toolbar cookie
+    setcookie('admin_logged_in', '', [
+        'expires'  => time() - 42000,
+        'path'     => '/',
+    ]);
 }

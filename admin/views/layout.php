@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="assets/admin.css">
 </head>
 <body>
+    <div class="admin-toolbar">
+        <a href="https://korjaamokoneet.fi/">korjaamokoneet.fi &rarr;</a>
+    </div>
     <header class="admin-header">
         <div class="admin-header-inner">
             <a href="index.php" class="admin-logo">Korjaamokone.fi &mdash; Hallinta</a>
