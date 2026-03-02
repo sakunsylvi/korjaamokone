@@ -361,6 +361,7 @@
         "price": "2 350 € sis. alv",
         "originalPrice": null,
         "priceNote": null,
+        "priceExtra": "(1 895 € alv 0%)",
         "availability": "available",
         "images": [
             "pilarinostimet-kaksipilarinostin-htl-2140s-1.jpg",
@@ -476,6 +477,7 @@
         "price": "3 790 € sis. alv",
         "originalPrice": null,
         "priceNote": null,
+        "isSale": true,
         "availability": "available",
         "images": [
             "pilarinostimet-kaksipilarinostin-htl-3460-1.jpg",
@@ -697,6 +699,7 @@
     {
         "id": "crl-568",
         "title": "Raskaan kaluston rengaskone CRL-568",
+        "titleHtml": "Raskaan kaluston rengaskone CRL-568 <span style=\"font-weight:400;font-size:.85em;\">(Hauvrex HC8910)</span>",
         "category": "rengaskoneet",
         "categoryLabel": "Rengaskoneet",
         "subcategory": "raskaan-kaluston-rengaskone",
@@ -1345,6 +1348,7 @@
         "price": "2 990 € sis. alv",
         "originalPrice": null,
         "priceNote": null,
+        "isSale": true,
         "availability": "available",
         "images": [
             "saksinostimet-saksinostin-cr-6105a-1.jpg",
