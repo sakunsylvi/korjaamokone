@@ -12,6 +12,9 @@ RewriteRule ^tuotteet/saksinostimet/?$ /2026/saksinostimet.html [R=301,L]
 RewriteRule ^tuotteet/pilarinostimet/?$ /2026/pilarinostimet.html [R=301,L]
 RewriteRule ^tuotteet/keventimet/?$ /2026/keventimet.html [R=301,L]
 
+# Renamed product pages (old SEO URL -> new)
+RewriteRule ^(2026/)?pilarinostimet-kaksipilarinostin-htl-3340\.html$ https://korjaamokoneet.fi/2026/pilarinostimet-kaksipilarinostin-htl-3440.html [R=301,L]
+
 # Admin panel — bypass static site rewrite
 RewriteRule ^admin(/.*)?$ - [L]
 

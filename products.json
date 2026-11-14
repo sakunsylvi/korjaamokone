@@ -1,509 +1,439 @@
 [
-  {
-    "title": "Kaksipilarinostin HTL-3940D",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-3940d.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-3940d-1.jpg",
-    "specs": [
-      "Lattiavapaa asymmetrinen malli",
-      "Sähkölukot",
-      "Nostokyky 4 000 kg",
-      "Kokonaiskorkeus 4 200 mm",
-      "Kokonaisleveys 3 400 mm",
-      "Lyhyemmät nostovarret 685–1 100 mm",
-      "Pidemmät nostovarret 766–1 495 mm"
-    ],
-    "price": "2 790 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin HTL-3140",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-3140.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-3140-1.gif",
-    "specs": [
-      "Kapasiteetti 4 tn",
-      "Lattiavapaa malli",
-      "Dual point lock release — automaattitoimiset mekaaniset lukot, avaus molemmissa tolpissa vaijerista vetämällä",
-      "CE merkitty"
-    ],
-    "price": "2 200 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin HTL-2145S",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-2145s.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-2145s-1.gif",
-    "specs": [
-      "Kapasiteetti 4,5 tn",
-      "Lattiavapaa malli",
-      "Single side lock release — mekaaniset lukot, vapautus yhdellä vivulla",
-      "CE merkitty"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Kaksipilarinostin HTL-2860",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-2860.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-2860-1.gif",
-    "specs": [
-      "Kapasiteetti 6 tn",
-      "Järeä malli, pitkillä tassuilla — ulottuvuus riittää pitemmillekin autoille",
-      "Ammattikäyttöön suunniteltu malli",
-      "Sähkötoimiset automaattilukot",
-      "CE merkitty"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Kaksipilarinostin HTL-2040",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-2040.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-2040-1.gif",
-    "specs": [
-      "Kapasiteetti 4 tn",
-      "Myös 3,5 tn malli — tarjous 1 890 € sis. alv",
-      "Mekaanisilla lukoilla varustettu, dual point lock release"
-    ],
-    "price": "1 990 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin HTL-2340",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-2340.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-2340-1.gif",
-    "specs": [
-      "Kapasiteetti 4 t",
-      "Ammattikäyttöön tarkoitettu sähkölukollinen malli",
-      "Nostokorkeus: min 110 mm, max 1 900 mm",
-      "Kokonaiskorkeus 2 822 mm",
-      "Kokonaisleveys 3 384 mm",
-      "Pilarien välinen etäisyys 2 760 mm"
-    ],
-    "price": "2 200 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin HTL-2150",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-2150.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-2150-1.gif",
-    "specs": [
-      "Kapasiteetti 5 t",
-      "Nostokorkeus: max 1 900 mm",
-      "Kokonaiskorkeus 2 850 mm",
-      "Kokonaisleveys 3 385 mm",
-      "Pilarien välinen etäisyys 2 760 mm",
-      "Lyhyen nostojalan pituus 685–1 100 mm"
-    ],
-    "price": "2 200 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin HTL-2140S",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-2140s.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-2140s-1.jpg",
-    "specs": [
-      "Kapasiteetti 4 t",
-      "Pitkillä tassuilla",
-      "Lukkojen vapautus yhdeltä puolen vivulla — singlepoint lock release",
-      "Nostokorkeus: min 100 mm, max 1 900 mm",
-      "Kokonaiskorkeus 2 790 mm",
-      "Kokonaisleveys 3 477 mm"
-    ],
-    "price": "2 350 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Nelipilarinostin Hauvrex HPL-4036HL",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-nelipilarinostin-hpl-4036hl.html",
-    "image": "images/pilarinostimet-nelipilarinostin-hpl-4036hl-1.gif",
-    "specs": [
-      "Nostoteho 3 600 kg",
-      "Reilunkokoinen pysäköintinostin — tarkoitettu autojen säilytykseen",
-      "Minimikorkeus 12,5 cm",
-      "Maksimi nostokorkeus 197,5 cm",
-      "Nostosiltojen pituus 430,5 cm",
-      "Kokonaispituus ajoramppien kanssa 530 cm, kokonaisleveys 259 cm"
-    ],
-    "price": "2 990 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin HTL-3460",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-3460.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-3460-1.jpg",
-    "specs": [
-      "Erittäin järeä ammattikäyttöön tarkoitettu malli sähkölukoilla",
-      "Kapasiteetti 6 tn",
-      "Nostokorkeus: min 100 mm, max 1 945 mm",
-      "Kokonaiskorkeus 4 420 mm",
-      "Kokonaisleveys 3 884 mm",
-      "Pilarien välinen etäisyys 3 260 mm"
-    ],
-    "price": "3 790 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin Hauvrex HTL-3340",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-3340.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-3340-1.gif",
-    "specs": [
-      "Ammattikäyttöön tarkoitettu sähkölukollinen malli",
-      "Kapasiteetti 4 t",
-      "Nostokorkeus: min 110 mm, max 1 900 mm",
-      "Kokonaiskorkeus 3 674 mm",
-      "Kokonaisleveys 3 384 mm",
-      "Pilarien välinen etäisyys 2 760 mm"
-    ],
-    "price": "2 690 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Kaksipilarinostin Hauvrex HTL-3450",
-    "category": "pilarinostimet",
-    "categoryLabel": "Pilarinostimet",
-    "slug": "pilarinostimet-kaksipilarinostin-htl-3450.html",
-    "image": "images/pilarinostimet-kaksipilarinostin-htl-3450-1.gif",
-    "specs": [
-      "Kapasiteetti 5 t",
-      "Symmetriset 3+3 nostovarret",
-      "Sähkölukot",
-      "Nostokorkeus max 1 945 mm"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Raskaan kaluston rengaskone CRL-598",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-raskaan-kaluston-rengaskone-crl-598.html",
-    "image": "images/rengaskoneet-raskaan-kaluston-rengaskone-crl-598-1.jpg",
-    "specs": [
-      "Rengaskoot 14–42 tuumaa",
-      "Maksimi renkaan leveys 1 065 mm",
-      "Maksimi renkaan halkaisija 2 300 mm",
-      "Maksimi renkaan paino 1 600 kg",
-      "Teho 1,8 kW",
-      "CE-hyväksytty"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Raskaan kaluston rengaskone CRL-568",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-raskaan-kaluston-rengaskone-crl-568.html",
-    "image": "images/rengaskoneet-raskaan-kaluston-rengaskone-crl-568-1.jpg",
-    "specs": [
-      "Kuorma-auton renkaille",
-      "Maksimi renkaan leveys 790 mm",
-      "Maksimi renkaan halkaisija 26 tuumaa",
-      "Teho 2,2 kW",
-      "Jännite 380 V",
-      "CE-hyväksytty — Suomen ja Ruotsinkieliset ohjeet"
-    ],
-    "price": "4 500 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Rengaskone CRL-850",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-rengaskone-crl-850.html",
-    "image": "images/rengaskoneet-rengaskone-crl-850-1.gif",
-    "specs": [
-      "Kolmeosainen apukäsi",
-      "Taaksepäin taittuva puomi",
-      "Vanteen lukitus ulkopuolelta 11–21 tuumaa / 280–530 mm",
-      "Vanteen lukitus sisäpuolelta 13–24 tuumaa / 330–610 mm",
-      "Maksimi renkaan halkaisija 41 tuumaa / 1 100 mm",
-      "Maksimi renkaan leveys 13 tuumaa / 330 mm"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Rengaskone CRL-810",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-rengaskone-crl-810.html",
-    "image": "images/rengaskoneet-rengaskone-crl-810-1.jpg",
-    "specs": [
-      "Vanteen lukitus ulkopuolelta 11–20 tuumaa",
-      "Vanteen lukitus sisäpuolelta 13–22 tuumaa",
-      "Maksimi renkaan halkaisija 43 tuumaa",
-      "Maksimi renkaan leveys 13 tuumaa",
-      "Käyttöpaine 8–10 bar",
-      "Melutaso 70 dB",
-      "Nettopaino 210 kg",
-      "Teho 0,8 kW"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Rengaskone CRL-813",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-rengaskone-crl-813.html",
-    "image": "images/rengaskoneet-rengaskone-crl-813-1.gif",
-    "specs": [
-      "Yksiosainen apukäsi",
-      "Vanteen lukitus ulkopuolelta 11–21 tuumaa / 280–530 mm",
-      "Vanteen lukitus sisäpuolelta 13–24 tuumaa / 330–610 mm",
-      "Maksimi renkaan halkaisija 41 tuumaa / 1 100 mm",
-      "Maksimi renkaan leveys 13 tuumaa / 330 mm",
-      "Käyttöpaine 8–10 bar"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Rengaskone CRL-812",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-rengaskone-crl-812.html",
-    "image": "images/rengaskoneet-rengaskone-crl-812-1.gif",
-    "specs": [
-      "Kaksiosainen apukäsi",
-      "Sivulle taittuva puomi",
-      "Vanteen lukitus ulkopuolelta 11–21 tuumaa / 280–530 mm",
-      "Vanteen lukitus sisäpuolelta 13–24 tuumaa / 330–610 mm",
-      "Maksimi renkaan halkaisija 41 tuumaa / 1 100 mm",
-      "Maksimi renkaan leveys 13 tuumaa / 330 mm"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Tasapainotuskone CRL-966",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-tasapainotuskone-crl-966.html",
-    "image": "images/rengaskoneet-tasapainotuskone-crl-966-1.jpg",
-    "specs": [
-      "Maksimi rengaspaino 70 kg",
-      "Maksimi renkaan halkaisija 960 mm",
-      "Vanteen halkaisija 12–24 tuumaa",
-      "Kierrosnopeus 215 rpm",
-      "Tasapainotustarkkuus +/- 1 g",
-      "Nettopaino 90 kg",
-      "Melutaso 70 dB",
-      "Teho 0,2 kW",
-      "Ohjelmat myös aluvanteille",
-      "CE-hyväksytty"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Rengaskone CRL-6112",
-    "category": "rengaskoneet",
-    "categoryLabel": "Rengaskoneet",
-    "slug": "rengaskoneet-rengaskone-crl-6112.html",
-    "image": "images/rengaskoneet-rengaskone-crl-6112-1.gif",
-    "specs": [
-      "Vanteen lukitus ulkopuolelta 10–19 tuumaa",
-      "Vanteen lukitus sisäpuolelta 12–21 tuumaa",
-      "Maksimi renkaan halkaisija 43 tuumaa",
-      "Maksimi renkaan leveys 13 tuumaa",
-      "Käyttöpaine 8–10 bar",
-      "Melutaso 70 dB",
-      "Nettopaino 210 kg",
-      "Teho 0,8 kW",
-      "CE-hyväksytty"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Saksinostin Hauvrex 6128",
-    "category": "saksinostimet",
-    "categoryLabel": "Saksinostimet",
-    "slug": "saksinostimet-saksinostin-hauvrex-6128.html",
-    "image": "images/saksinostimet-saksinostin-hauvrex-6128-1.gif",
-    "specs": [
-      "Kapasiteetti 2,8 t",
-      "Minimikorkeus n. 115 mm — Max. 1 200 mm",
-      "Siirrettävä malli",
-      "Paino 400 kg",
-      "380 V / 220 V  50 Hz / 60 Hz",
-      "CE merkitty"
-    ],
-    "price": "1 990 € sis. alv 25,5%",
-    "available": true
-  },
-  {
-    "title": "Saksinostin CR-6106",
-    "category": "saksinostimet",
-    "categoryLabel": "Saksinostimet",
-    "slug": "saksinostimet-saksinostin-cr-6106.html",
-    "image": "images/saksinostimet-saksinostin-cr-6106-1.jpg",
-    "specs": [
-      "Kapasiteetti 3 t",
-      "Min. 105 mm – Max. 1 900 mm",
-      "Teho 2,2 kW",
-      "3 PH / 380 V tai 1 PH / 220 V",
-      "CE-hyväksytty"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Saksinostin Hauvrex HXL-6230",
-    "category": "saksinostimet",
-    "categoryLabel": "Saksinostimet",
-    "slug": "saksinostimet-saksinostin-hauvrex-hxl-6230.html",
-    "image": "images/saksinostimet-saksinostin-hauvrex-hxl-6230-1.gif",
-    "specs": [
-      "Kapasiteetti 3,5 t",
-      "Nostokorkeus: min. 110 mm, max. 1 000 mm",
-      "Nostimen leveys 1 860 mm",
-      "Lukittavat rampit",
-      "Sylinterin päässä on apuvarsi, joka antaa hyvän nostokyvyn"
-    ],
-    "price": "2 090 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Saksinostin Hauvrex HXL-6840",
-    "category": "saksinostimet",
-    "categoryLabel": "Saksinostimet",
-    "slug": "saksinostimet-saksinostin-hauvrex-hxl-6840.html",
-    "image": "images/saksinostimet-saksinostin-hauvrex-hxl-6840-1.gif",
-    "specs": [
-      "Kapasiteetti 4,0 t",
-      "Nostokorkeus: min. 180 mm, max. 1 700 mm",
-      "Nostotason pituus 4 500 mm",
-      "Nostimen leveys 2 140 mm",
-      "Teho 2,2 kW",
-      "Hydraulinen kevennin ajosiltojen välissä"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Saksinostin CR-6105A",
-    "category": "saksinostimet",
-    "categoryLabel": "Saksinostimet",
-    "slug": "saksinostimet-saksinostin-cr-6105a.html",
-    "image": "images/saksinostimet-saksinostin-cr-6105a-1.jpg",
-    "specs": [
-      "Kapasiteetti 3,0 t",
-      "Nostokorkeus max. 2 000 mm",
-      "Kokonaispituus 1 860 mm",
-      "Lattiaan upotettava malli",
-      "CE-hyväksytty"
-    ],
-    "price": "2 990 € sis. alv",
-    "available": true
-  },
-  {
-    "title": "Saksinostin CRL-6270",
-    "category": "saksinostimet",
-    "categoryLabel": "Saksinostimet",
-    "slug": "saksinostimet-saksinostin-crl-6270.html",
-    "image": "images/saksinostimet-saksinostin-crl-6270-1.jpeg",
-    "specs": [
-      "Max nostokorkeus 2 000 mm",
-      "Tason pituus 1 540 mm"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Saksinostin CRL-6010",
-    "category": "saksinostimet",
-    "categoryLabel": "Saksinostimet",
-    "slug": "saksinostimet-saksinostin-crl-6010.html",
-    "image": "images/saksinostimet-saksinostin-crl-6010-1.gif",
-    "specs": [
-      "Matalaprofiilinen saksinostin"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Paineilmatunkki TR-3813",
-    "category": "keventimet",
-    "categoryLabel": "Keventimet",
-    "slug": "keventimet-paineilmatunkki-tr-3813.html",
-    "image": "images/keventimet-paineilmatunkki-tr-3813-1.gif",
-    "specs": [
-      "Nopea, kätevä ja kevyt käyttää renkaanvaihtotöissä",
-      "Minimikorkeus 150 mm",
-      "Maksimikorkeus 400 mm",
-      "Kapasiteetti 2 tonnia",
-      "Hinta toimitettuna lähimpään postipisteeseen"
-    ],
-    "price": null,
-    "available": false
-  },
-  {
-    "title": "Kevennin Hauvrex RX20Q Pneumatic Rolling Jack",
-    "category": "keventimet",
-    "categoryLabel": "Keventimet",
-    "slug": "keventimet-kevennin-hauvrex-rx20q.html",
-    "image": "images/keventimet-kevennin-hauvrex-rx20q-1.gif",
-    "specs": [
-      "Kapasiteetti 2000 kg",
-      "Paineilmakäyttöinen hydraulipumppu",
-      "Pakkaus sisältää kumitassut, kumityynyt sekä korokeholkit"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Kevennin Hauvrex RX20M Manual Rolling Jack",
-    "category": "keventimet",
-    "categoryLabel": "Keventimet",
-    "slug": "keventimet-kevennin-hauvrex-rx20m.html",
-    "image": "images/keventimet-kevennin-hauvrex-rx20m-1.gif",
-    "specs": [
-      "Kapasiteetti 2000 kg",
-      "Hydraulinen käsipumppu",
-      "Pakkaus sisältää kumitassut, kumityynyt sekä korokeholkit"
-    ],
-    "price": null,
-    "available": true
-  },
-  {
-    "title": "Paineilmatunkki Trenlibow",
-    "category": "keventimet",
-    "categoryLabel": "Keventimet",
-    "slug": "keventimet-paineilmatunkki-trenlibow.html",
-    "image": "images/keventimet-paineilmatunkki-trenlibow-1.gif",
-    "specs": [
-      "Nopea, kätevä ja kevyt käyttää renkaanvaihtotöissä",
-      "Minimikorkeus 130 mm",
-      "Maksimikorkeus 375 mm",
-      "Kapasiteetti 2 tonnia",
-      "Hinta toimitettuna lähimpään postipisteeseen"
-    ],
-    "price": null,
-    "available": false
-  }
+    {
+        "title": "Kevennin Hauvrex RX20Q Pneumatic Rolling Jack",
+        "category": "keventimet",
+        "categoryLabel": "Keventimet",
+        "slug": "keventimet-kevennin-hauvrex-rx20q.html",
+        "image": "images/keventimet-kevennin-hauvrex-rx20q-1.gif",
+        "specs": [
+            "Kapasiteetti 2000 kg",
+            "Paineilmakäyttöinen hydraulipumppu",
+            "Pakkaus sisältää kumitassut, kumityynyt sekä korokeholkit"
+        ],
+        "price": null,
+        "available": true
+    },
+    {
+        "title": "Kevennin Hauvrex RX20M Manual Rolling Jack",
+        "category": "keventimet",
+        "categoryLabel": "Keventimet",
+        "slug": "keventimet-kevennin-hauvrex-rx20m.html",
+        "image": "images/keventimet-kevennin-hauvrex-rx20m-1.gif",
+        "specs": [
+            "Kapasiteetti 2000 kg",
+            "Hydraulinen käsipumppu",
+            "Pakkaus sisältää kumitassut, kumityynyt sekä korokeholkit"
+        ],
+        "price": null,
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-3940D",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-3940d.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-3940d-1.jpg",
+        "specs": [
+            "Lattiavapaa asymmetrinen malli",
+            "Sähkölukot",
+            "Nostokyky 4 000 kg",
+            "Kokonaiskorkeus 4 200 mm",
+            "Kokonaisleveys 3 400 mm",
+            "Lyhyemmät nostovarret 685–1 100 mm",
+            "Pidemmät nostovarret 766–1 495 mm"
+        ],
+        "price": "2 690 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-3140",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-3140.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-3140-1.gif",
+        "specs": [
+            "Kapasiteetti 4 tn",
+            "Lattiavapaa malli",
+            "Dual point lock release — automaattitoimiset mekaaniset lukot, avaus molemmissa tolpissa vaijerista vetämällä",
+            "Myös single point release malli- lukkojen avaus yhdestä vivusta +50 euroa",
+            "CE merkitty"
+        ],
+        "price": "2 000 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-2145S",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-2145s.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-2145s-1.gif",
+        "specs": [
+            "Kapasiteetti 4,5 tn",
+            "Lattiavapaa malli",
+            "Single side lock release — mekaaniset lukot, vapautus yhdellä vivulla",
+            "CE merkitty"
+        ],
+        "price": null,
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-2860",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-2860.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-2860-1.gif",
+        "specs": [
+            "Kapasiteetti 6 tn",
+            "Järeä malli, pitkillä tassuilla — ulottuvuus riittää pitemmillekin autoille",
+            "Ammattikäyttöön suunniteltu malli",
+            "Sähkötoimiset automaattilukot",
+            "CE merkitty"
+        ],
+        "price": null,
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-2035",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-2035.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-2040-1.gif",
+        "specs": [
+            "Kapasiteetti 3,5 tn",
+            "Mekaanisilla lukkojen avauksella varustettu, dual point lock release"
+        ],
+        "price": "1 790 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-2440",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-2440.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-2340-1.gif",
+        "specs": [
+            "Kapasiteetti 4 t",
+            "Ammattikäyttöön tarkoitettu sähkölukollinen malli",
+            "Nostokorkeus: min 110 mm, max 1 900 mm",
+            "Kokonaiskorkeus 2 822 mm",
+            "Kokonaisleveys 3 384 mm",
+            "Pilarien välinen etäisyys 2 760 mm"
+        ],
+        "price": "2 400 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-2150",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-2150.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-2150-1.gif",
+        "specs": [
+            "Kapasiteetti 5 t",
+            "Nostokorkeus: max 1 900 mm",
+            "Kokonaiskorkeus 2 850 mm",
+            "Kokonaisleveys 3 385 mm",
+            "Pilarien välinen etäisyys 2 760 mm",
+            "Lyhyen nostojalan pituus 685–1 100 mm"
+        ],
+        "price": "2 000 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-2140S",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-2140s.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-2140s-1.jpg",
+        "specs": [
+            "Kapasiteetti 4 t",
+            "Pitkillä tassuilla",
+            "Lukkojen vapautus yhdeltä puolen vivulla — singlepoint lock release",
+            "Nostokorkeus: min 100 mm, max 1 900 mm",
+            "Kokonaiskorkeus 2 790 mm",
+            "Kokonaisleveys 3 477 mm"
+        ],
+        "price": "2 050 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Nelipilarinostin Hauvrex HPL-4036HL",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-nelipilarinostin-hpl-4036hl.html",
+        "image": "images/pilarinostimet-nelipilarinostin-hpl-4036hl-1.gif",
+        "specs": [
+            "Nostoteho 3 600 kg, saatavilla myös 4 tn malli 450cm ajosilloilla, ja suuremmalla nostokorkeudella.",
+            "Reilunkokoinen pysäköintinostin — tarkoitettu autojen säilytykseen",
+            "Minimikorkeus 12,5 cm",
+            "Maksimi nostokorkeus 197,5 cm",
+            "Nostosiltojen pituus 430,5 cm",
+            "Kokonaispituus ajoramppien kanssa 530 cm, kokonaisleveys 259 cm"
+        ],
+        "price": "2 890 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin HTL-3460",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-3460.html",
+        "image": "images/pilarinostimet-kaksipilarinostin-htl-3460-1.jpg",
+        "specs": [
+            "Erittäin järeä ammattikäyttöön tarkoitettu malli sähkölukoilla",
+            "Kapasiteetti 6 tn",
+            "Nostokorkeus: min 100 mm, max 1 945 mm",
+            "Kokonaiskorkeus 4 420 mm",
+            "Kokonaisleveys 3 884 mm",
+            "Pilarien välinen etäisyys 3 260 mm"
+        ],
+        "price": "3 890 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Kaksipilarinostin Hauvrex HTL-3440",
+        "category": "pilarinostimet",
+        "categoryLabel": "Pilarinostimet",
+        "slug": "pilarinostimet-kaksipilarinostin-htl-3440.html",
+        "image": "images/kaksipilarinostin-hauvrex-htl-3440-sahkolukollinen-ammattimalli-4t-nostokyky.jpg",
+        "specs": [
+            "Ammattikäyttöön tarkoitettu sähkölukollinen malli",
+            "Kapasiteetti 4 t",
+            "Nostokorkeus: min 110 mm, max 1 900 mm",
+            "Kokonaiskorkeus n.3 995mm",
+            "Kokonaisleveys 3 384 mm",
+            "Pilarien välinen etäisyys 2 760 mm"
+        ],
+        "price": "2490 sis alv",
+        "available": true
+    },
+    {
+        "title": "Raskaan kaluston rengaskone CRL-598",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-raskaan-kaluston-rengaskone-crl-598.html",
+        "image": "images/rengaskoneet-raskaan-kaluston-rengaskone-crl-598-1.jpg",
+        "specs": [
+            "Rengaskoot 14–42 tuumaa",
+            "Maksimi renkaan leveys 1 065 mm",
+            "Maksimi renkaan halkaisija 2 300 mm",
+            "Maksimi renkaan paino 1 600 kg",
+            "Teho 1,8 kW",
+            "CE-hyväksytty"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Raskaan kaluston rengaskone CRL-568",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-raskaan-kaluston-rengaskone-crl-568.html",
+        "image": "images/rengaskoneet-raskaan-kaluston-rengaskone-crl-568-1.jpg",
+        "specs": [
+            "Kuorma-auton renkaille",
+            "Maksimi renkaan leveys 790 mm",
+            "Maksimi renkaan halkaisija 26 tuumaa",
+            "Teho 2,2 kW",
+            "Jännite 380 V",
+            "CE-hyväksytty — Suomen ja Ruotsinkieliset ohjeet"
+        ],
+        "price": "4 500 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Rengaskone CRL-850",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-rengaskone-crl-850.html",
+        "image": "images/rengaskoneet-rengaskone-crl-850-1.gif",
+        "specs": [
+            "Kolmeosainen apukäsi",
+            "Taaksepäin taittuva puomi",
+            "Vanteen lukitus ulkopuolelta 11–21 tuumaa / 280–530 mm",
+            "Vanteen lukitus sisäpuolelta 13–24 tuumaa / 330–610 mm",
+            "Maksimi renkaan halkaisija 41 tuumaa / 1 100 mm",
+            "Maksimi renkaan leveys 13 tuumaa / 330 mm"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Rengaskone CRL-810",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-rengaskone-crl-810.html",
+        "image": "images/rengaskoneet-rengaskone-crl-810-1.jpg",
+        "specs": [
+            "Vanteen lukitus ulkopuolelta 11–20 tuumaa",
+            "Vanteen lukitus sisäpuolelta 13–22 tuumaa",
+            "Maksimi renkaan halkaisija 43 tuumaa",
+            "Maksimi renkaan leveys 13 tuumaa",
+            "Käyttöpaine 8–10 bar",
+            "Melutaso 70 dB",
+            "Nettopaino 210 kg",
+            "Teho 0,8 kW"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Rengaskone CRL-813",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-rengaskone-crl-813.html",
+        "image": "images/rengaskoneet-rengaskone-crl-813-1.gif",
+        "specs": [
+            "Yksiosainen apukäsi",
+            "Vanteen lukitus ulkopuolelta 11–21 tuumaa / 280–530 mm",
+            "Vanteen lukitus sisäpuolelta 13–24 tuumaa / 330–610 mm",
+            "Maksimi renkaan halkaisija 41 tuumaa / 1 100 mm",
+            "Maksimi renkaan leveys 13 tuumaa / 330 mm",
+            "Käyttöpaine 8–10 bar"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Rengaskone CRL-812",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-rengaskone-crl-812.html",
+        "image": "images/rengaskoneet-rengaskone-crl-812-1.gif",
+        "specs": [
+            "Kaksiosainen apukäsi",
+            "Sivulle taittuva puomi",
+            "Vanteen lukitus ulkopuolelta 11–21 tuumaa / 280–530 mm",
+            "Vanteen lukitus sisäpuolelta 13–24 tuumaa / 330–610 mm",
+            "Maksimi renkaan halkaisija 41 tuumaa / 1 100 mm",
+            "Maksimi renkaan leveys 13 tuumaa / 330 mm"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Tasapainotuskone CRL-966",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-tasapainotuskone-crl-966.html",
+        "image": "images/rengaskoneet-tasapainotuskone-crl-966-1.jpg",
+        "specs": [
+            "Maksimi rengaspaino 70 kg",
+            "Maksimi renkaan halkaisija 960 mm",
+            "Vanteen halkaisija 12–24 tuumaa",
+            "Kierrosnopeus 215 rpm",
+            "Tasapainotustarkkuus +/- 1 g",
+            "Nettopaino 90 kg",
+            "Melutaso 70 dB",
+            "Teho 0,2 kW",
+            "Ohjelmat myös aluvanteille",
+            "CE-hyväksytty"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Rengaskone CRL-6112",
+        "category": "rengaskoneet",
+        "categoryLabel": "Rengaskoneet",
+        "slug": "rengaskoneet-rengaskone-crl-6112.html",
+        "image": "images/rengaskoneet-rengaskone-crl-6112-1.gif",
+        "specs": [
+            "Vanteen lukitus ulkopuolelta 10–19 tuumaa",
+            "Vanteen lukitus sisäpuolelta 12–21 tuumaa",
+            "Maksimi renkaan halkaisija 43 tuumaa",
+            "Maksimi renkaan leveys 13 tuumaa",
+            "Käyttöpaine 8–10 bar",
+            "Melutaso 70 dB",
+            "Nettopaino 210 kg",
+            "Teho 0,8 kW",
+            "CE-hyväksytty"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Saksinostin Hauvrex 6128",
+        "category": "saksinostimet",
+        "categoryLabel": "Saksinostimet",
+        "slug": "saksinostimet-saksinostin-hauvrex-6128.html",
+        "image": "images/saksinostimet-saksinostin-hauvrex-6128-1.gif",
+        "specs": [
+            "Kapasiteetti 2,8 t",
+            "Minimikorkeus n. 115 mm — Max. 1 200 mm",
+            "Siirrettävä malli",
+            "Paino 400 kg",
+            "380 V / 220 V  50 Hz / 60 Hz",
+            "CE merkitty"
+        ],
+        "price": "1 850 € sis. alv 25,5%",
+        "available": true
+    },
+    {
+        "title": "Saksinostin CR-6106",
+        "category": "saksinostimet",
+        "categoryLabel": "Saksinostimet",
+        "slug": "saksinostimet-saksinostin-cr-6106.html",
+        "image": "images/saksinostimet-saksinostin-cr-6106-1.jpg",
+        "specs": [
+            "Kapasiteetti 3 t",
+            "Min. 105 mm – Max. 1 900 mm",
+            "Teho 2,2 kW",
+            "3 PH / 380 V tai 1 PH / 220 V",
+            "CE-hyväksytty"
+        ],
+        "price": null,
+        "available": true
+    },
+    {
+        "title": "Saksinostin Hauvrex HXL-6230",
+        "category": "saksinostimet",
+        "categoryLabel": "Saksinostimet",
+        "slug": "saksinostimet-saksinostin-hauvrex-hxl-6230.html",
+        "image": "images/saksinostimet-saksinostin-hauvrex-hxl-6230-1.gif",
+        "specs": [
+            "Kapasiteetti 3,5 t",
+            "Nostokorkeus: min. 110 mm, max. 1 000 mm",
+            "Nostimen leveys 1 860 mm",
+            "Lukittavat rampit",
+            "Sähkölukot",
+            "Sylinterin päässä on apuvarsi, joka antaa hyvän nostokyvyn",
+            "CE hyväksytty"
+        ],
+        "price": "2 035 € sis. alv",
+        "available": true
+    },
+    {
+        "title": "Saksinostin Hauvrex HXL-6840",
+        "category": "saksinostimet",
+        "categoryLabel": "Saksinostimet",
+        "slug": "saksinostimet-saksinostin-hauvrex-hxl-6840.html",
+        "image": "images/saksinostimet-saksinostin-hauvrex-hxl-6840-1.gif",
+        "specs": [
+            "Kapasiteetti 4,0 t",
+            "Nostokorkeus: min. 180 mm, max. 1 700 mm",
+            "Nostotason pituus 4 500 mm",
+            "Nostimen leveys 2 140 mm",
+            "Teho 2,2 kW",
+            "Hydraulinen kevennin ajosiltojen välissä"
+        ],
+        "price": null,
+        "available": false
+    },
+    {
+        "title": "Saksinostin CR-6105A",
+        "category": "saksinostimet",
+        "categoryLabel": "Saksinostimet",
+        "slug": "saksinostimet-saksinostin-cr-6105a.html",
+        "image": "images/saksinostimet-saksinostin-cr-6105a-1.jpg",
+        "specs": [
+            "Kapasiteetti 3,0 t",
+            "Nostokorkeus max. 2 000 mm",
+            "Kokonaispituus 1 860 mm",
+            "Lattiaan upotettava malli",
+            "CE-hyväksytty"
+        ],
+        "price": "2 990 € sis. alv",
+        "available": true
+    }
 ]
