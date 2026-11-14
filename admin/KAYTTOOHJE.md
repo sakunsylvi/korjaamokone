@@ -178,7 +178,10 @@ Lisaaminen ja poistaminen toimii samalla tavalla kuin tuotekuvien kanssa, mutta 
 
 - Sallitut tiedostotyypit: JPG, PNG, GIF, WebP
 - Maksimikoko: 5 MB per kuva
-- Tiedostonimea ei tarvitse mietia -- jarjestelma nimeaa kuvat automaattisesti tuotteen tietojen perusteella
+- Kuva sailyttaa oman tiedostonimensa, joten nimea kuva kuvaavasti ennen latausta (hyva hakukoneille), esim. `kaksipilarinostin-hauvrex-htl-3340-sahkolukollinen-ammattimalli-4t-nostokyky.jpg`
+- Nimi siistitaan automaattisesti: pienet kirjaimet, ä/ö/å -> a/o/a, valilyonnit, alaviivat ja muut erikoismerkit muutetaan viivoiksi. Esim. `Ääkkös Testi_Kuva.JPEG` -> `aakkos-testi-kuva.jpg`
+- Jos samanniminen kuva on jo palvelimella, uuteen lisataan loppuun `-2`, `-3` jne. -- vanhaa kuvaa ei koskaan korvata
+- Jos nimesta ei jaa mitaan kayttokelpoista (esim. pelkkia erikoismerkkeja), kuva nimetaan tuotteen tietojen perusteella
 
 ---
 

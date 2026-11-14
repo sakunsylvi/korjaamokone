@@ -57,20 +57,18 @@ function handle_upload(array $file, string $category, string $subcategory, strin
         return 'ERROR: Tiedostotyyppi ei ole sallittu (sallitut: JPG, PNG, GIF, WebP)';
     }
 
+    // Extension comes from the detected MIME type (lowercase, allowed, jpeg -> jpg)
     $ext = ALLOWED_TYPES[$mime];
 
-    // Build filename
-    $prefix = $category . '-' . $subcategory . '-' . $modelCode;
-
-    if ($type === 'diagram') {
-        // Count existing diagram images to determine N
-        $n = next_image_number(get_diagram_images($category, $subcategory, $modelCode));
-        $filename = $prefix . '-dims-' . $n . '.' . $ext;
-    } else {
-        // Count existing product images to determine N
-        $n = next_image_number(get_product_images($category, $subcategory, $modelCode));
-        $filename = $prefix . '-' . $n . '.' . $ext;
+    // Keep the uploaded file's own name (SEO), sanitised; fall back to <slug>-<N>
+    $base = seo_basename($file['name'] ?? '');
+    if ($base === '') {
+        $prefix = $category . '-' . $subcategory . '-' . $modelCode;
+        $base = $type === 'diagram'
+            ? $prefix . '-dims-' . next_image_number(get_diagram_images($category, $subcategory, $modelCode))
+            : $prefix . '-' . next_image_number(get_product_images($category, $subcategory, $modelCode));
     }
+    $filename = unique_filename($base, $ext);
 
     // Move uploaded file
     $destination = IMAGES_DIR . '/' . $filename;
@@ -82,8 +80,46 @@ function handle_upload(array $file, string $category, string $subcategory, strin
     return $filename;
 }
 
+// Maximum length of the sanitised base name (without "-N" and extension)
+define('MAX_BASENAME_LENGTH', 120);
+
 /**
- * Next free image number: highest existing -N suffix + 1.
+ * Sanitise an uploaded file's name into an SEO/URL-safe base name (no extension):
+ * lowercase, ä/ö/å -> a/o/a, other diacritics stripped, anything outside
+ * [a-z0-9-] -> '-', repeated '-' collapsed, '-' trimmed from the ends.
+ * Returns '' when nothing usable is left.
+ */
+function seo_basename(string $original): string
+{
+    $name = pathinfo(basename(str_replace('\\', '/', $original)), PATHINFO_FILENAME);
+    $name = strtr($name, ['ä' => 'a', 'Ä' => 'a', 'ö' => 'o', 'Ö' => 'o', 'å' => 'a', 'Å' => 'a']);
+
+    // Strip remaining diacritics (é -> e, ü -> u ...)
+    if (class_exists('Normalizer') && ($nfd = Normalizer::normalize($name, Normalizer::FORM_D)) !== false) {
+        $name = preg_replace('/\p{Mn}+/u', '', $nfd) ?? $name;
+    } elseif (function_exists('iconv')) {
+        $name = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $name) ?: $name;
+    }
+
+    $name = strtolower($name);
+    $name = trim(preg_replace('/[^a-z0-9]+/', '-', $name), '-');
+    return rtrim(substr($name, 0, MAX_BASENAME_LENGTH), '-');
+}
+
+/**
+ * Never overwrite: returns "<base>.<ext>", or "<base>-2.<ext>", "-3" ... if taken.
+ */
+function unique_filename(string $base, string $ext): string
+{
+    $filename = $base . '.' . $ext;
+    for ($n = 2; file_exists(IMAGES_DIR . '/' . $filename); $n++) {
+        $filename = $base . '-' . $n . '.' . $ext;
+    }
+    return $filename;
+}
+
+/**
+ * Next free image number for the <slug>-<N> fallback name: highest existing -N suffix + 1.
  * (count + 1 would overwrite an existing file when the numbering has gaps.)
  */
 function next_image_number(array $existing): int
@@ -182,7 +218,9 @@ function get_diagram_images(string $category, string $subcategory, string $model
 }
 
 /**
- * Internal: find images matching a prefix pattern.
+ * Internal: find images matching a prefix pattern. Only used to number the
+ * <slug>-<N> fallback name; a product's images are whatever its 'images' /
+ * 'diagramImages' arrays list (any filename, in that order).
  *
  * @param string $prefix  Filename prefix (e.g. 'pilarinostimet-kaksipilarinostin-htl-3940d')
  * @param bool   $diagram If true, match '-dims-N.ext'; if false, match '-N.ext' but NOT '-dims-'

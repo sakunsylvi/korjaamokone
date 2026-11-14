@@ -236,7 +236,10 @@ ob_start();
 <ul>
     <li>Sallitut tiedostotyypit: JPG, PNG, GIF, WebP</li>
     <li>Maksimikoko: 5 MB per kuva</li>
-    <li>Tiedostonimeä ei tarvitse miettiä &ndash; järjestelmä nimeää kuvat automaattisesti tuotteen tietojen perusteella</li>
+    <li>Kuva säilyttää oman tiedostonimensä, joten nimeä kuva kuvaavasti ennen latausta (hyvä hakukoneille), esim. <code>kaksipilarinostin-hauvrex-htl-3340-sahkolukollinen-ammattimalli-4t-nostokyky.jpg</code></li>
+    <li>Nimi siistitään automaattisesti: pienet kirjaimet, ä/ö/å &rarr; a/o/a, välilyönnit, alaviivat ja muut erikoismerkit muutetaan viivoiksi. Esim. <code>Ääkkös Testi_Kuva.JPEG</code> &rarr; <code>aakkos-testi-kuva.jpg</code></li>
+    <li>Jos samanniminen kuva on jo palvelimella, uuteen lisätään loppuun <code>-2</code>, <code>-3</code> jne. &ndash; vanhaa kuvaa ei koskaan korvata</li>
+    <li>Jos nimestä ei jää mitään käyttökelpoista (esim. pelkkiä erikoismerkkejä), kuva nimetään tuotteen tietojen perusteella</li>
 </ul>
 
 <hr>
