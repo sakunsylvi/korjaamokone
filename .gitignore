@@ -2,3 +2,6 @@
 .playwright-mcp/
 .claude/
 .env
+admin/data/sitemap-state.json
+admin/data/publish-log.json
+/sitemap.xml
