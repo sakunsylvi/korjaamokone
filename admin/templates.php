@@ -238,7 +238,7 @@ HTML;
   <main id="tp_content">
 
     <section class="hero" aria-label="Etusivun hero-kuva">
-      <img src="images/homepage-hero.gif" alt="KM-Machine korjaamokoneet" style="width:100%;height:100%;object-fit:cover;">
+      <img src="images/korjaamokoneet-autokorjaamon-laitteet.gif" alt="KM-Machine korjaamokoneet" style="width:100%;height:100%;object-fit:cover;">
     </section>
 
     <section aria-label="Tuotekategoriat">
