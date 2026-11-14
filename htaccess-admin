@@ -22,6 +22,8 @@ RewriteRule ^(2026/)?keventimet-paineilmatunkki-trenlibow\.html$ https://korjaam
 RewriteRule ^(2026/)?pilarinostimet-kaksipilarinostin-htl-3450\.html$ https://korjaamokoneet.fi/2026/pilarinostimet.html [R=301,L]
 RewriteRule ^(2026/)?saksinostimet-saksinostin-crl-6010\.html$ https://korjaamokoneet.fi/2026/saksinostimet.html [R=301,L]
 RewriteRule ^(2026/)?saksinostimet-saksinostin-crl-6270\.html$ https://korjaamokoneet.fi/2026/saksinostimet.html [R=301,L]
+# WordPress-era /tuotteet and /verkkokauppa (any subpath) -> homepage; specific /tuotteet/<category> rules above win
+RewriteRule ^(tuotteet|verkkokauppa)(/.*)?$ https://korjaamokoneet.fi/ [R=301,L,QSD]
 
 # SEO image renames 2026-11-14 (old image URL -> new SEO name; /images/ and /2026/images/)
 RewriteRule ^(2026/)?images/pilarinostimet-kaksipilarinostin-htl-3940d-1\.jpg$ https://korjaamokoneet.fi/2026/images/kaksipilarinostin-htl-3940d.jpg [R=301,L]
@@ -81,10 +83,18 @@ RewriteRule ^(2026/)?images/homepage-hero\.gif$ https://korjaamokoneet.fi/2026/i
 # Admin panel — bypass static site rewrite
 RewriteRule ^admin(/.*)?$ - [L]
 
+# robots.txt and sitemap.xml are served from the web root, not 2026/
+RewriteRule ^(robots\.txt|sitemap\.xml)$ - [L]
+
 # Serve everything from 2026/
 RewriteCond %{REQUEST_URI} !^/2026/
 RewriteRule ^(.*)$ /2026/$1 [L]
 # END 2026 static site
+
+# Never serve backup copies (*.bak*, *-backup-*), 2026-11-14
+<FilesMatch "(\.bak|-backup-)">
+  Require all denied
+</FilesMatch>
 
 #RewriteOptions inherit
 #
