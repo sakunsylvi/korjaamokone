@@ -32,12 +32,13 @@ function handle_upload(array $file, string $category, string $subcategory, strin
     // Check for upload errors
     if ($file['error'] !== UPLOAD_ERR_OK) {
         $messages = [
-            UPLOAD_ERR_INI_SIZE   => 'Tiedosto ylittaa palvelimen kokorajan',
-            UPLOAD_ERR_FORM_SIZE  => 'Tiedosto ylittaa lomakkeen kokorajan',
+            UPLOAD_ERR_INI_SIZE   => 'Tiedosto ylittää palvelimen kokorajan (' . ini_get('upload_max_filesize') . ')',
+            UPLOAD_ERR_FORM_SIZE  => 'Tiedosto ylittää lomakkeen kokorajan',
             UPLOAD_ERR_PARTIAL    => 'Tiedosto ladattiin vain osittain',
             UPLOAD_ERR_NO_FILE    => 'Tiedostoa ei ladattu',
-            UPLOAD_ERR_NO_TMP_DIR => 'Vailiaikaiskansio puuttuu',
-            UPLOAD_ERR_CANT_WRITE => 'Tiedoston kirjoitus epaonnistui',
+            UPLOAD_ERR_NO_TMP_DIR => 'Väliaikaiskansio puuttuu',
+            UPLOAD_ERR_CANT_WRITE => 'Tiedoston kirjoitus epäonnistui',
+            UPLOAD_ERR_EXTENSION  => 'PHP-laajennus esti latauksen',
         ];
         return 'ERROR: ' . ($messages[$file['error']] ?? 'Tuntematon latausvirhe');
     }
@@ -63,24 +64,84 @@ function handle_upload(array $file, string $category, string $subcategory, strin
 
     if ($type === 'diagram') {
         // Count existing diagram images to determine N
-        $existing = get_diagram_images($category, $subcategory, $modelCode);
-        $n = count($existing) + 1;
+        $n = next_image_number(get_diagram_images($category, $subcategory, $modelCode));
         $filename = $prefix . '-dims-' . $n . '.' . $ext;
     } else {
         // Count existing product images to determine N
-        $existing = get_product_images($category, $subcategory, $modelCode);
-        $n = count($existing) + 1;
+        $n = next_image_number(get_product_images($category, $subcategory, $modelCode));
         $filename = $prefix . '-' . $n . '.' . $ext;
     }
 
     // Move uploaded file
     $destination = IMAGES_DIR . '/' . $filename;
     if (!move_uploaded_file($file['tmp_name'], $destination)) {
-        return 'ERROR: Tiedoston siirto epaonnistui';
+        return 'ERROR: Tiedoston siirto epäonnistui';
     }
 
     chmod($destination, 0644);
     return $filename;
+}
+
+/**
+ * Next free image number: highest existing -N suffix + 1.
+ * (count + 1 would overwrite an existing file when the numbering has gaps.)
+ */
+function next_image_number(array $existing): int
+{
+    $max = 0;
+    foreach ($existing as $name) {
+        if (preg_match('/-(\d+)\.\w+$/', $name, $m)) {
+            $max = max($max, (int)$m[1]);
+        }
+    }
+    return $max + 1;
+}
+
+/**
+ * Process a multi-file input (e.g. name="newImages[]").
+ * Saved filenames are appended to $target; returns error messages ("name: reason").
+ */
+function process_uploads(string $field, array $product, string $type, array &$target): array
+{
+    $errors = [];
+    $files = $_FILES[$field] ?? null;
+    if (!$files || !is_array($files['name'])) {
+        return $errors;
+    }
+
+    foreach ($files['name'] as $i => $name) {
+        if ($files['error'][$i] === UPLOAD_ERR_NO_FILE) {
+            continue; // empty file input
+        }
+        $result = handle_upload([
+            'name'     => $name,
+            'tmp_name' => $files['tmp_name'][$i],
+            'size'     => $files['size'][$i],
+            'error'    => $files['error'][$i],
+        ], $product['category'], $product['subcategory'], $product['modelCode'], $type);
+
+        if (strpos($result, 'ERROR: ') === 0) {
+            $errors[] = $name . ': ' . substr($result, strlen('ERROR: '));
+        } else {
+            $target[] = $result;
+        }
+    }
+    return $errors;
+}
+
+/**
+ * Decode the existingImages JSON from the form and keep only plain filenames
+ * that exist in IMAGES_DIR (drops stale or bogus entries).
+ */
+function existing_images(string $json): array
+{
+    $list = json_decode($json, true);
+    if (!is_array($list)) {
+        return [];
+    }
+    return array_values(array_filter($list, function ($img) {
+        return is_string($img) && $img === basename($img) && is_file(IMAGES_DIR . '/' . $img);
+    }));
 }
 
 /**

@@ -107,49 +107,22 @@ switch ($action) {
             $product['id'] = $product['modelCode'];
         }
 
-        // Handle existing images (keep from hidden field)
-        $product['images'] = json_decode($_POST['existingImages'] ?? '[]', true) ?: [];
-        $product['diagramImages'] = json_decode($_POST['existingDiagramImages'] ?? '[]', true) ?: [];
+        // Keep existing images (from hidden field), dropping entries whose file is missing
+        $product['images'] = existing_images($_POST['existingImages'] ?? '[]');
+        $product['diagramImages'] = existing_images($_POST['existingDiagramImages'] ?? '[]');
 
-        // Handle new image uploads
-        if (!empty($_FILES['newImages']['name'][0])) {
-            foreach ($_FILES['newImages']['name'] as $i => $name) {
-                if ($_FILES['newImages']['error'][$i] === UPLOAD_ERR_OK) {
-                    $file = [
-                        'tmp_name' => $_FILES['newImages']['tmp_name'][$i],
-                        'name' => $_FILES['newImages']['name'][$i],
-                        'size' => $_FILES['newImages']['size'][$i],
-                    ];
-                    $result = handle_upload($file, $product['category'], $product['subcategory'], $product['modelCode'], 'product');
-                    if (!is_string($result) || strpos($result, 'Virhe') !== false) {
-                        // Upload error - skip this file
-                    } else {
-                        $product['images'][] = $result;
-                    }
-                }
-            }
-        }
-
-        // Handle new diagram uploads
-        if (!empty($_FILES['newDiagrams']['name'][0])) {
-            foreach ($_FILES['newDiagrams']['name'] as $i => $name) {
-                if ($_FILES['newDiagrams']['error'][$i] === UPLOAD_ERR_OK) {
-                    $file = [
-                        'tmp_name' => $_FILES['newDiagrams']['tmp_name'][$i],
-                        'name' => $_FILES['newDiagrams']['name'][$i],
-                        'size' => $_FILES['newDiagrams']['size'][$i],
-                    ];
-                    $result = handle_upload($file, $product['category'], $product['subcategory'], $product['modelCode'], 'diagram');
-                    if (!is_string($result) || strpos($result, 'Virhe') !== false) {
-                        // Upload error - skip this file
-                    } else {
-                        $product['diagramImages'][] = $result;
-                    }
-                }
-            }
-        }
+        // Handle new uploads
+        $uploadErrors = array_merge(
+            process_uploads('newImages', $product, 'product', $product['images']),
+            process_uploads('newDiagrams', $product, 'diagram', $product['diagramImages'])
+        );
 
         save_product($product);
+        if ($uploadErrors) {
+            $_SESSION['flash_error'] = 'Tuote tallennettu, mutta kuvan lataus epäonnistui: ' . implode('; ', $uploadErrors);
+            header('Location: index.php?action=product&id=' . urlencode($product['id']));
+            exit;
+        }
         header('Location: index.php');
         exit;
 
