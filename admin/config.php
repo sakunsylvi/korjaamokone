@@ -13,6 +13,9 @@ define('IMAGES_DIR', SITE_DIR . '/images');
 define('AUTH_USER', 'petri_jussila');
 define('AUTH_PASS_HASH', '$2y$10$Z1nCHadt6jpCoTYelxQ4J.pYZKHPEll/iJtZCnxuczNZXccAFPGfy');
 
+// Toast shown after saving content that still needs to be published
+define('PUBLISH_REMINDER', 'Muista painaa julkaise lopuksi');
+
 // Session config
 define('SESSION_LIFETIME', 86400); // 24 hours
 

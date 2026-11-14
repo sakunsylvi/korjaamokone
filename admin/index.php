@@ -118,6 +118,7 @@ switch ($action) {
         );
 
         save_product($product);
+        $_SESSION['flash_toast'] = PUBLISH_REMINDER;
         if ($uploadErrors) {
             $_SESSION['flash_error'] = 'Tuote tallennettu, mutta kuvan lataus epäonnistui: ' . implode('; ', $uploadErrors);
             header('Location: index.php?action=product&id=' . urlencode($product['id']));
@@ -154,6 +155,7 @@ switch ($action) {
             'sortOrder' => (int)($_POST['sortOrder'] ?? 0),
         ];
         save_category($category);
+        $_SESSION['flash_toast'] = PUBLISH_REMINDER;
         header('Location: index.php');
         exit;
 

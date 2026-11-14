@@ -34,5 +34,21 @@
 
         <?= $content ?>
     </main>
+
+    <?php if (!empty($_SESSION['flash_toast'])): ?>
+        <div class="toast" id="toast" role="status" aria-live="polite" title="Sulje">
+            <span><?= htmlspecialchars($_SESSION['flash_toast']) ?></span>
+            <button type="button" class="toast-close" aria-label="Sulje ilmoitus">&times;</button>
+        </div>
+        <script>
+        (function () {
+            var t = document.getElementById('toast');
+            var hide = function () { t.classList.add('toast-hidden'); setTimeout(function () { t.remove(); }, 300); };
+            t.addEventListener('click', hide);
+            setTimeout(hide, 6000);
+        })();
+        </script>
+        <?php unset($_SESSION['flash_toast']); ?>
+    <?php endif; ?>
 </body>
 </html>
