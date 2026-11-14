@@ -143,7 +143,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Kaksipilarinostin HTL-2145S — lattiavapaa malli, single side lock release, 4,5 tn nostokyky. Ei saatavilla.",
+        "metaDescription": "Kaksipilarinostin HTL-2145S — lattiavapaa malli, single side lock release, 4,5 tn nostokyky.",
         "sortOrder": 2,
         "slug": "pilarinostimet-kaksipilarinostin-htl-2145s.html",
         "images": [
@@ -189,7 +189,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Kaksipilarinostin HTL-2860 — 6 tn järeä ammattimalli pitkillä tassuilla, sähkötoimiset automaattilukot. Ei saatavilla.",
+        "metaDescription": "Kaksipilarinostin HTL-2860 — 6 tn järeä ammattimalli pitkillä tassuilla, sähkötoimiset automaattilukot.",
         "sortOrder": 3,
         "slug": "pilarinostimet-kaksipilarinostin-htl-2860.html",
         "images": [
@@ -224,7 +224,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Kaksipilarinostin HTL-2040 — 4 tn nostokyky, dual point lock release, mekaaniset lukot.",
+        "metaDescription": "Kaksipilarinostin HTL-2035 — 4 tn nostokyky, dual point lock release, mekaaniset lukot.",
         "sortOrder": 4,
         "slug": "pilarinostimet-kaksipilarinostin-htl-2035.html",
         "images": [
@@ -624,7 +624,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Raskaan kaluston rengaskone CRL-598 — rengaskoot 14–42 tuumaa, paino max 1 600 kg. Ei saatavilla.",
+        "metaDescription": "Raskaan kaluston rengaskone CRL-598 — rengaskoot 14–42 tuumaa, paino max 1 600 kg.",
         "sortOrder": 0
     },
     {
@@ -736,7 +736,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Rengaskone CRL-850 — kolmeosainen apukäsi, taaksepäin taittuva puomi. Ei saatavilla.",
+        "metaDescription": "Rengaskone CRL-850 — kolmeosainen apukäsi, taaksepäin taittuva puomi.",
         "sortOrder": 2
     },
     {
@@ -800,7 +800,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Rengaskone CRL-810 — max 43 tuumaa, 0,8 kW, nettopaino 210 kg. Ei saatavilla.",
+        "metaDescription": "Rengaskone CRL-810 — max 43 tuumaa, 0,8 kW, nettopaino 210 kg.",
         "sortOrder": 3
     },
     {
@@ -854,7 +854,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Rengaskone CRL-813 — yksiosainen apukäsi, max 41 tuumaa. Ei saatavilla.",
+        "metaDescription": "Rengaskone CRL-813 — yksiosainen apukäsi, max 41 tuumaa.",
         "sortOrder": 4
     },
     {
@@ -908,7 +908,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Rengaskone CRL-812 — kaksiosainen apukäsi, sivulle taittuva puomi. Ei saatavilla.",
+        "metaDescription": "Rengaskone CRL-812 — kaksiosainen apukäsi, sivulle taittuva puomi.",
         "sortOrder": 5
     },
     {
@@ -982,7 +982,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Tasapainotuskone CRL-966 — tarkkuus +/- 1 g, vanteet 12–24 tuumaa, ohjelmat aluvanteille. Ei saatavilla.",
+        "metaDescription": "Tasapainotuskone CRL-966 — tarkkuus +/- 1 g, vanteet 12–24 tuumaa, ohjelmat aluvanteille.",
         "sortOrder": 6
     },
     {
@@ -1154,7 +1154,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Saksinostin CR-6106 — 3 t nostokyky, max 1 900 mm, 2,2 kW. Tilaustuote.",
+        "metaDescription": "Saksinostin CR-6106 — 3 t nostokyky, max 1 900 mm, 2,2 kW.",
         "sortOrder": 1
     },
     {
@@ -1255,7 +1255,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Saksinostin Hauvrex HXL-6840 — 4 t, max 1 700 mm, 4 500 mm taso. Tilaustuote.",
+        "metaDescription": "Saksinostin Hauvrex HXL-6840 — 4 t, max 1 700 mm, 4 500 mm taso.",
         "sortOrder": 3,
         "slug": "saksinostimet-saksinostin-hauvrex-hxl-6840.html",
         "images": [
@@ -1354,7 +1354,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Kevennin Hauvrex RX20Q — 2 000 kg, paineilmakäyttöinen hydraulipumppu. Tilaustuote.",
+        "metaDescription": "Kevennin Hauvrex RX20Q — 2 000 kg, paineilmakäyttöinen hydraulipumppu.",
         "sortOrder": 1
     },
     {
@@ -1394,7 +1394,7 @@
             }
         ],
         "description": "",
-        "metaDescription": "Kevennin Hauvrex RX20M — 2 000 kg, hydraulinen käsipumppu. Tilaustuote.",
+        "metaDescription": "Kevennin Hauvrex RX20M — 2 000 kg, hydraulinen käsipumppu.",
         "sortOrder": 2
     }
 ]
