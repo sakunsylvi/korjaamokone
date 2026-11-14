@@ -12,8 +12,16 @@ RewriteRule ^tuotteet/saksinostimet/?$ /2026/saksinostimet.html [R=301,L]
 RewriteRule ^tuotteet/pilarinostimet/?$ /2026/pilarinostimet.html [R=301,L]
 RewriteRule ^tuotteet/keventimet/?$ /2026/keventimet.html [R=301,L]
 
-# Renamed product pages (old SEO URL -> new)
+# Old product page URLs -> current pages (2026-11-14; /2026/ and root paths)
 RewriteRule ^(2026/)?pilarinostimet-kaksipilarinostin-htl-3340\.html$ https://korjaamokoneet.fi/2026/pilarinostimet-kaksipilarinostin-htl-3440.html [R=301,L]
+RewriteRule ^(2026/)?pilarinostimet-kaksipilarinostin-htl-2040\.html$ https://korjaamokoneet.fi/2026/pilarinostimet-kaksipilarinostin-htl-2035.html [R=301,L]
+RewriteRule ^(2026/)?pilarinostimet-kaksipilarinostin-htl-2340\.html$ https://korjaamokoneet.fi/2026/pilarinostimet-kaksipilarinostin-htl-2440.html [R=301,L]
+RewriteRule ^(2026/)?product-htl-3940d\.html$ https://korjaamokoneet.fi/2026/pilarinostimet-kaksipilarinostin-htl-3940d.html [R=301,L]
+RewriteRule ^(2026/)?keventimet-paineilmatunkki-tr-3813\.html$ https://korjaamokoneet.fi/2026/keventimet.html [R=301,L]
+RewriteRule ^(2026/)?keventimet-paineilmatunkki-trenlibow\.html$ https://korjaamokoneet.fi/2026/keventimet.html [R=301,L]
+RewriteRule ^(2026/)?pilarinostimet-kaksipilarinostin-htl-3450\.html$ https://korjaamokoneet.fi/2026/pilarinostimet.html [R=301,L]
+RewriteRule ^(2026/)?saksinostimet-saksinostin-crl-6010\.html$ https://korjaamokoneet.fi/2026/saksinostimet.html [R=301,L]
+RewriteRule ^(2026/)?saksinostimet-saksinostin-crl-6270\.html$ https://korjaamokoneet.fi/2026/saksinostimet.html [R=301,L]
 
 # SEO image renames 2026-11-14 (old image URL -> new SEO name; /images/ and /2026/images/)
 RewriteRule ^(2026/)?images/pilarinostimet-kaksipilarinostin-htl-3940d-1\.jpg$ https://korjaamokoneet.fi/2026/images/kaksipilarinostin-htl-3940d.jpg [R=301,L]
